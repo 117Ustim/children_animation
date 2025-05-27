@@ -19,6 +19,7 @@ return (
 
  <div className={styles.green_2}>
            <img src="/img/green_2.png" alt="green" className={styles.greenImage_1} /> 
+          
          <img src="/img/green_2.png" alt="green" className={styles.greenImage_2} /> 
           </div>
 </div>

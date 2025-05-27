@@ -24,6 +24,7 @@
    width: 100%;
   height:18vw;  
 }
+
 .branch_block {
     position: relative;
   
@@ -63,8 +64,8 @@ right: 1.5vw;
     width: 3vw;
     height: auto;
     position: absolute;
-    top:0;
-    right: 1.5vw;
+    top:0.5vw;
+    right: 0.5vw;
 }
 
 

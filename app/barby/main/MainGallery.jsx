@@ -1,14 +1,27 @@
+'use client';
+
+import { motion} from 'framer-motion';
 import Image from 'next/image';
 import styles from'./main_gallery.module.css';
 
 
 
 export default function MainGallery () {
+
+
+
+
 return (
+   
 <div className={styles.container}>
    
       <div className={styles.left}>
-        <div className={styles.image_block}>
+      <div className={styles.image_block}>
+        <motion.div
+          initial={{ scale: 0.5, opacity: 0, z: -100 }}
+          animate={{ scale: 1, opacity: 1, z: 0 }}
+          transition={{ duration: 1, ease: 'easeOut' }}
+        >
           <Image
             src="/img/gallery/elipse_gallery.png"
             alt="Photo 1"
@@ -16,6 +29,13 @@ return (
             height={694}
             className={styles.elipse_gallery}
           />
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1, duration: 1, ease: 'easeOut' }}
+        >
           <Image
             src="/img/gallery/erasebg_gallery.png"
             alt="Photo 2"
@@ -23,8 +43,9 @@ return (
             height={792}
             className={styles.image_gallery}
           />
-        </div>
+        </motion.div>
       </div>
+    </div>
 
       {/* Правая колонка с текстом */}
       <div className={styles.right}>
@@ -56,8 +77,20 @@ return (
         </div>
        
       </div>
-       <img src="/img/gallery/spider.png" alt="spider" className={styles.spider} /> 
+    <motion.img
+      src="/img/gallery/spider.png"
+      alt="spider"
+      className={styles.spider}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{
+        delay: 2,
+        duration: 2.5, // более плавное появление
+        ease: [0.25, 0.1, 0.25, 1] // кастомная кривая (ease-in-out)
+      }}
+    />
      
     </div>
+   
   );
 };

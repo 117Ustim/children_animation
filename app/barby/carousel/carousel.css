@@ -124,7 +124,7 @@
 #carousel div.selected:hover img {
 
   filter: brightness(70%);
-  transform: scale(1.2);
+  transform: scale(0.228);
 }
 
 
