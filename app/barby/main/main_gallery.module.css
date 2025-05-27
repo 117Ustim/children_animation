@@ -48,7 +48,7 @@
 }
 
 .textContent h1 {
-  font-size: 1.7vw;
+  font-size: 2em;
   margin-bottom: 1.2vw;
  
 }
@@ -103,10 +103,10 @@ height: auto;
 
 
  @media (min-width: 1000px) and (max-width: 1400px) {
-  .textContent {
+.textContent h1 {
+  font-size: 1.7em;
+  margin-bottom: 1.2vw;
  
-  font-size: 1.4vw;
-    
 }
 .spider {
   
@@ -126,9 +126,14 @@ height: auto;
   font-size: 1.8vw;
     
 }
+.textContent h1 {
+  font-size: 1.5em;
+  margin-bottom: 1.2vw;
+ 
+}
 .spider {
   
-    top: 25vw;
+    top: 28vw;
     
 }
  }
@@ -144,9 +149,14 @@ height: auto;
   font-size: 2.2vw;
     
 }
+.textContent h1 {
+  font-size: 1.7em;
+  margin-bottom: 1.2vw;
+ 
+}
 .spider {
   
-    top: 30vw;
+    top: 40vw;
     
 }
  }

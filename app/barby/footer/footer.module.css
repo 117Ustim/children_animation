@@ -66,3 +66,43 @@ right: 1.5vw;
     top:0;
     right: 1.5vw;
 }
+
+
+@media (max-width: 600px) {
+
+  .branch {
+    position: absolute;
+  top:-55vw;
+    right: -20vw;  
+     width: 65vw;
+    height: auto; 
+}  
+.sheet_block {
+    position: relative;
+    width: 100%;
+    height: 10vw;
+    top: -8vw;
+    right: 40vw;
+}
+.sheetImage {
+    width: 7vw;
+    height: auto;
+position: absolute;
+top:0vw;
+right: 0vw;
+}
+.dropsImage {
+    width: 5vw;
+    height: auto;
+position: absolute;
+top:1.5vw;
+right: 1.5vw;
+}
+.ladybugImage {
+    width: 6vw;
+    height: auto;
+    position: absolute;
+    top:0;
+    right: 1.5vw;
+}
+}

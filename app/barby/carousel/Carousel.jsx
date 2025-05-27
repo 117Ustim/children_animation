@@ -5,11 +5,11 @@ import { useState } from 'react';
 import  './carousel.css';
 
 const images = [
-  { src: "https://i.postimg.cc/1X5zGSHT/storyintro1.jpg", alt: "IMG1", link: "#IMG1" },
-  { src: "https://i.postimg.cc/yxQ8nGpN/storyintro2.jpg", alt: "IMG2", link: "#IMG2" },
-  { src: "https://i.postimg.cc/mZ8kbcZG/storyintro3.jpg", alt: "IMG3", link: "#IMG3" },
-  { src: "https://i.postimg.cc/kXH5bkt1/storyintro4.jpg", alt: "IMG4", link: "#IMG4" },
-  { src: "https://i.postimg.cc/8Pc5s1sf/storyintro5.jpg", alt: "IMG5", link: "#IMG5" },
+  { src: "/img/gallery/carousel/1.JPG", alt: "IMG1", link: "#IMG1" },
+  { src: "/img/gallery/carousel/2.JPG", alt: "IMG2", link: "#IMG2" },
+  { src: "/img/gallery/carousel/3.JPG", alt: "IMG3", link: "#IMG3" },
+  { src: "/img/gallery/carousel/4.JPG", alt: "IMG4", link: "#IMG4" },
+  { src: "/img/gallery/carousel/5.JPG", alt: "IMG5", link: "#IMG5" },
 ];
 
 
