@@ -45,6 +45,7 @@ margin-left: 23.5vw;
   top: -8vw;
   left: -11vw;
   transform: rotate(-10deg);
+  z-index: 1;
 }
 
 .imageWrapper_2 {
@@ -127,8 +128,41 @@ font-family: "Paytone One", sans-serif;
   object-fit: contain;
 }
 
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.701); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
 
-
+.modalContent {
+  /* background: white; */
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+}
+.modalImage {
+  position: relative;
+  top: 0;
+  left:-10vw;
+  width: 50vw;
+  height:auto ;
+}
+.telImage {
+  position: relative;
+  top: -19vw;
+  left: 0;
+  width: 27vw;
+  height:auto;
+}
 
 @media (min-width: 570px) and (max-width: 1200px) {
   .section {
@@ -205,6 +239,20 @@ margin-left: 24.5vw;
   width: 7.5vw;
   height: auto;
 
+}
+.modalImage {
+
+  top: 0;
+  left:-10vw;
+  width: 60vw;
+  
+}
+.telImage {
+  position: relative;
+  top: -22vw;
+  left: 0;
+  width: 30vw;
+  height:auto;
 }
 }
 
@@ -286,5 +334,19 @@ margin-left: 31.5vw;
   font-weight: 400;
  letter-spacing:0.52vw;
   
+}
+.modalImage {
+
+  top: -20vw;
+  left:-10vw;
+  width: 90vw;
+  
+}
+.telImage {
+  position: relative;
+  top: -53vw;
+  left: -2vw;
+  width: 50vw;
+  height:auto;
 }
 }

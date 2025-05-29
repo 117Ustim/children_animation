@@ -1,6 +1,8 @@
 'use client';
 import { motion } from 'framer-motion';
 import styles from './main.module.css';
+import Background from '../background/Background';
+
 
 const letters = [
   { src: "/img/coolest/c.png", alt: "c", className: styles.coolest_c },
@@ -14,7 +16,12 @@ const letters = [
 
 export default function Main() {
   return (
+    <>
+    
+  
+     <Background/>
     <motion.section className={styles.section}>
+   
       <div className={styles.image_block}>
         <motion.img
           src="/img/spray.png"
@@ -58,6 +65,19 @@ export default function Main() {
             }}
           />
 
+         <motion.div
+  className={styles.gradient_circle}
+  initial={{ scale: 0.2, opacity: 0 }}
+  animate={{ scale: 1, opacity: 1 }}
+  transition={{
+    type: "spring",
+    stiffness: 100,
+    damping: 10,
+  }}
+>
+
+</motion.div>
+ {/* <div className={styles.gradient_circle}></div> */}
           <motion.img
             src="/img/erasebg.png"
             alt="erasebg"
@@ -195,6 +215,7 @@ export default function Main() {
           }}
         />
       </div>
-    </motion.section>
+    </motion.section> 
+     </>
   );
 }

@@ -1,0 +1,391 @@
+.aboutTitle {
+	font-size: 7.5rem;
+	font-weight: 900;
+	text-transform: uppercase;
+	letter-spacing: -0.02em;
+	position: absolute;
+	top: 45px;
+	left: 50%;
+	transform: translateX(-50%);
+	pointer-events: none;
+	white-space: nowrap;
+	font-family: "Arial Black", "Arial Bold", Arial, sans-serif;
+	background: linear-gradient(
+		to bottom,
+		rgb(8 42 123 / 35%) 30%,
+		rgb(255 255 255 / 0%) 76%
+	);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+}
+.center {
+  transform: scale(1);
+  z-index: 5;
+}
+
+.zoomed {
+  transform: scale(2.0) !important; 
+  z-index: 10;
+}
+.carouselContainer {
+	
+	z-index: 5 !important;
+	width: 100%;
+	max-width: 1200px;
+	height: 450px;
+	position: relative;
+	perspective: 1000px;
+	margin: 80px auto;
+}
+
+.carouselTrack {
+	
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	transform-style: preserve-3d;
+	transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.card {
+	position: absolute;
+	width: 280px;
+	height: 380px;
+	background: white;
+	border-radius: 20px;
+	overflow: hidden;
+	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+	transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+	cursor: pointer;
+	transition: transform 0.5s ease;
+}
+
+.card img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.card.center {
+	
+	z-index: 10;
+	transform: scale(1.1) translateZ(0);
+}
+
+.card.center img {
+	filter: none;
+}
+
+.card.left2 { /* Changed from .left-2 */
+	z-index: 1;
+	transform: translateX(-400px) scale(0.8) translateZ(-300px);
+	opacity: 0.7;
+}
+
+.card.left2 img { /* Changed from .left-2 */
+	filter: grayscale(100%);
+}
+
+.card.left1 { /* Changed from .left-1 */
+	z-index: 5;
+	transform: translateX(-200px) scale(0.9) translateZ(-100px);
+	opacity: 0.9;
+}
+
+.card.left1 img { /* Changed from .left-1 */
+	filter: grayscale(100%);
+}
+
+.card.right1 { /* Changed from .right-1 */
+	z-index: 5;
+	transform: translateX(200px) scale(0.9) translateZ(-100px);
+	opacity: 0.9;
+}
+
+.card.right1 img { /* Changed from .right-1 */
+	filter: grayscale(100%);
+}
+
+.card.right2 { /* Changed from .right-2 */
+	z-index: 1;
+	transform: translateX(400px) scale(0.8) translateZ(-300px);
+	opacity: 0.7;
+}
+
+.card.right2 img { /* Changed from .right-2 */
+	filter: grayscale(100%);
+}
+
+.card.hidden {
+	opacity: 0;
+	pointer-events: none;
+}
+
+.memberInfo {
+	text-align: center;
+	margin-top: 40px;
+	transition: all 0.5s ease-out;
+}
+
+.memberName {
+	color: rgb(8, 42, 123);
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-bottom: 10px;
+	position: relative;
+	display: inline-block;
+}
+
+.memberName::before,
+.memberName::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	width: 100px;
+	height: 2px;
+	background: rgb(8, 42, 123);
+}
+
+.memberName::before {
+	left: -120px;
+}
+
+.memberName::after {
+	right: -120px;
+}
+
+.memberRole {
+	color: #848696;
+	font-size: 1.5rem;
+	font-weight: 500;
+	opacity: 0.8;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	padding: 10px 0;
+	margin-top: -15px;
+	position: relative;
+}
+/* .dots {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	margin-top: 60px;
+}
+
+.dot {
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background: rgba(8, 42, 123, 0.2);
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.dot.active {
+	background: rgb(8, 42, 123);
+	transform: scale(1.2);
+} */
+
+.navArrow {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background: rgba(8, 42, 123, 0.6);
+	color: white;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	z-index: 120;
+	transition: all 0.3s ease;
+	font-size: 1.5rem;
+	border: none;
+	outline: none;
+	padding-bottom: 4px;
+	
+}
+
+.navArrow:hover {
+		background: rgba(86, 108, 221, 0.6);
+
+	transform: translateY(-50%) scale(1.1);
+}
+
+.navArrow.left {
+	left: 2vw;
+	padding-right: 3px;
+   
+}
+
+.navArrow.right {
+	
+	right: 2vw;
+	padding-left: 3px;
+
+ 
+}
+ /* @media (min-width: 1400px) and (max-width: 1800px) {
+.navArrow.left {
+	left: 35vw;
+	padding-right: 3px;
+   
+}
+
+.navArrow.right {
+	
+	right: 35vw;
+	padding-left: 3px;
+
+ 
+}
+} */
+@media (max-width: 900px) {
+		.carouselTrack {
+	
+	top: -10vw;
+}
+	.memberInfo {
+
+	margin-top: -20vw;
+	
+}
+	.aboutTitle {
+		font-size: 4.5rem;
+	}
+
+	.card {
+		width: 200px;
+		height: 280px;
+	}
+
+	.card.left2 { /* Changed from .left-2 */
+		transform: translateX(-250px) scale(0.8) translateZ(-300px);
+	}
+
+	.card.left1 { /* Changed from .left-1 */
+		transform: translateX(-120px) scale(0.9) translateZ(-100px);
+	}
+
+	.card.right1 { /* Changed from .right-1 */
+		transform: translateX(120px) scale(0.9) translateZ(-100px);
+	}
+
+	.card.right2 { /* Changed from .right-2 */
+		transform: translateX(250px) scale(0.8) translateZ(-300px);
+	}
+
+	.memberName {
+		font-size: 2rem;
+	}
+
+	.memberRole {
+		font-size: 1.2rem;
+	}
+
+	.memberName::before,
+	.memberName::after {
+		width: 50px;
+	}
+
+	.memberName::before {
+		left: -70px;
+	}
+
+	.memberName::after {
+		right: -70px;
+	}
+	.navArrow.left {
+	left: 6vw;
+	padding-right: 3px;
+   
+}
+
+.navArrow.right {
+	
+	right: 6vw;
+	padding-left: 3px;
+
+ 
+}
+}
+
+@media (max-width: 600px) {
+	.memberInfo {
+
+	margin-top: -30vw;
+	
+}
+
+	.carouselTrack {
+	
+	top: -30vw;
+}
+	.aboutTitle {
+		font-size: 4.5rem;
+	}
+
+	.card {
+		width: 150px;
+		height: 230px;
+	}
+
+	.card.left2 { /* Changed from .left-2 */
+		transform: translateX(-250px) scale(0.8) translateZ(-300px);
+	}
+
+	.card.left1 { /* Changed from .left-1 */
+		transform: translateX(-120px) scale(0.9) translateZ(-100px);
+	}
+
+	.card.right1 { /* Changed from .right-1 */
+		transform: translateX(120px) scale(0.9) translateZ(-100px);
+	}
+
+	.card.right2 { /* Changed from .right-2 */
+		transform: translateX(250px) scale(0.8) translateZ(-300px);
+	}
+
+	.memberName {
+		font-size: 2rem;
+	}
+
+	.memberRole {
+		font-size: 1.2rem;
+	}
+
+	.memberName::before,
+	.memberName::after {
+		width: 50px;
+	}
+
+	.memberName::before {
+		left: -70px;
+	}
+
+	.memberName::after {
+		
+		right: -70px;
+	}
+	.navArrow.left {
+		top:300px;
+	left: 30vw;
+	padding-right: 3px;
+   
+}
+
+.navArrow.right {
+	top:300px;
+	right: 30vw;
+	padding-left: 3px;
+
+ 
+}
+}

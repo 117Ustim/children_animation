@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import styles from './header.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
+import { useState } from 'react';
 
 
 
@@ -10,6 +11,10 @@ import Image from 'next/image';
 
 export default function Header() {
 
+const [isModalOpen, setIsModalOpen] = useState(false);
+
+const openModal = () => setIsModalOpen(true);
+const closeModal = () => setIsModalOpen(false);
 
   return (
     <motion.section
@@ -19,6 +24,47 @@ export default function Header() {
       // viewport={{ once: true }}
        className={styles.section}
     >
+
+      {isModalOpen && (
+  <motion.div
+    className={styles.modalOverlay}
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    exit={{ opacity: 0 }}
+    transition={{ duration: 0.5 }}
+    onClick={closeModal}
+  >
+<motion.div
+  className={styles.modalContent}
+  initial={{ y: -50, opacity: 0 }}
+  animate={{ y: 0, opacity: 1 }}
+  exit={{ y: 50, opacity: 0 }}
+  transition={{ duration: 0.5 }}
+  onClick={(e) => e.stopPropagation()}
+>
+  <Image
+    src="/img/table.png" 
+    alt="Contacts Background"
+    width={400}
+    height={400}
+    className={styles.modalImage}
+    priority
+  />
+  <Image
+    src="/img/tel.png" 
+    alt="Contacts Background"
+    width={400}
+    height={400}
+    className={styles.telImage}
+    priority
+  />
+  {/* <button onClick={closeModal} className={styles.closeButton}>
+    Закрити
+  </button> */}
+</motion.div>
+
+  </motion.div>
+)}
     <div className={styles.imageRow}>
        <div className={styles.imageWrapper_1}>
           
@@ -91,17 +137,20 @@ export default function Header() {
    <div className={styles.imageWrapper_4}>
      {/* <Link href="/contact"><div className={styles.header_text_3}>Контакти</div></Link> */}
 <motion.div
-        className={styles.header_text_3}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{
-          delay: 3.6, // ⏱ Задержка появления на 2 секунды
-          duration: 2,
-          ease: 'easeOut',
-        }}
-      >
-        Контакти
-      </motion.div>
+  className={styles.header_text_3}
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{
+    delay: 3.6,
+    duration: 2,
+    ease: 'easeOut',
+  }}
+  onClick={openModal}
+  style={{ cursor: 'pointer' }}
+>
+  Контакти
+</motion.div>
+
      
     <Image
       src="/img/cloud_4_1.png"
@@ -115,5 +164,6 @@ export default function Header() {
      
       </div>
     </motion.section>
+    
   );
 }
