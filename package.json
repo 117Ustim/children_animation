@@ -2,18 +2,14 @@
   "name": "children-animation",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/117Ustim/children_animation.git",
   "scripts": {
     
-"dev": "next dev",
+
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "next lint"
    
-
-    "deploy": "gh-pages -d out"
-
-
   },
   "dependencies": {
     "framer-motion": "^12.10.4",
@@ -24,8 +20,6 @@
     "sass": "^1.88.0"
   },
   "devDependencies": {
-        "eslint": "latest",
-    "eslint-config-next": "latest",
     "gh-pages": "^6.3.0"
   }
 }

@@ -1,18 +1,18 @@
-const isProd = process.env.NODE_ENV === 'production';
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  output: 'export', 
-
- 
-  assetPrefix: isProd ? '/children_animation/' : '',
-  basePath: isProd ? '/children_animation' : '',
-
-
+  output: 'export',
+  trailingSlash: true,
   images: {
-    unoptimized: true,
+    unoptimized: true, 
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'i.postimg.cc',
+      },
+    ],
   },
+
+
 };
 
 export default nextConfig;
