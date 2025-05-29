@@ -5,8 +5,16 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
 
+// Определяем базовый путь, который должен соответствовать basePath в next.config.mjs
+// Это важно, чтобы он был доступен на клиентской стороне
+const IS_PROD = process.env.NODE_ENV === 'production';
+const BASE_PATH = IS_PROD ? '/children_animation' : '';
 
-
+// Функция для получения правильного пути к статическому ресурсу
+// Она добавит /children_animation к пути только в продакшн-сборке
+const getPublicAssetPath = (path) => {
+  return `${BASE_PATH}${path}`;
+};
 
 
 export default function Header() {
@@ -21,8 +29,7 @@ const closeModal = () => setIsModalOpen(false);
       initial={{ opacity: 0, y: -30 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6,delay: 1.1 }}
-      // viewport={{ once: true }}
-       className={styles.section}
+        className={styles.section}
     >
 
       {isModalOpen && (
@@ -43,7 +50,7 @@ const closeModal = () => setIsModalOpen(false);
   onClick={(e) => e.stopPropagation()}
 >
   <Image
-    src="/img/table.png" 
+    src={getPublicAssetPath("/img/table.png")} // ИЗМЕНЕНО: теперь путь с префиксом
     alt="Contacts Background"
     width={400}
     height={400}
@@ -51,25 +58,22 @@ const closeModal = () => setIsModalOpen(false);
     priority
   />
   <Image
-    src="/img/tel.png" 
+    src={getPublicAssetPath("/img/tel.png")} // ИЗМЕНЕНО: теперь путь с префиксом
     alt="Contacts Background"
     width={400}
     height={400}
     className={styles.telImage}
     priority
   />
-  {/* <button onClick={closeModal} className={styles.closeButton}>
-    Закрити
-  </button> */}
 </motion.div>
 
   </motion.div>
 )}
     <div className={styles.imageRow}>
-       <div className={styles.imageWrapper_1}>
+        <div className={styles.imageWrapper_1}>
           
     <Image
-      src="/img/cloud_1.png"
+      src={getPublicAssetPath("/img/cloud_1.png")} // ИЗМЕНЕНО: теперь путь с префиксом
       alt="cloud"
       fill
       className={styles.image_1}
@@ -77,13 +81,13 @@ const closeModal = () => setIsModalOpen(false);
     />
   </div>
   <div className={styles.imageWrapper_2}>
-   <Link href="/">
+    <Link href="/">
       <motion.div
         className={styles.header_text_1}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{
-          delay: 3.1, // ⏱ Задержка появления на 2 секунды
+          delay: 3.1,
           duration: 2,
           ease: 'easeOut',
         }}
@@ -92,7 +96,7 @@ const closeModal = () => setIsModalOpen(false);
       </motion.div>
     </Link>
     <Image
-      src="/img/cloud_2.png"
+      src={getPublicAssetPath("/img/cloud_2.png")} // ИЗМЕНЕНО: теперь путь с префиксом
       alt="cloud"
       fill
       className={styles.image_2}
@@ -100,32 +104,29 @@ const closeModal = () => setIsModalOpen(false);
     />
   </div>
   <div className={styles.imageWrapper_3}>
-      {/* <Link href="/gallery"><div className={styles.header_text_2}>Галерея</div></Link> */}
-
-       <Link href="/barby">
+        <Link href="/barby">
       <motion.div
         className={styles.header_text_2}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{
-          delay: 3.4, // ⏱ Задержка появления на 2 секунды
+          delay: 3.4,
           duration: 2,
           ease: 'easeOut',
         }}
       >
         Галерея
-       
       </motion.div>
-       </Link>
+        </Link>
     <Image
-      src="/img/cloud_3_1.png"
+      src={getPublicAssetPath("/img/cloud_3_1.png")} // ИЗМЕНЕНО: теперь путь с префиксом
       alt="cloud"
       fill
       className={styles.image_3}
       priority
     />
    <motion.img
-  src="/img/airplane.png"
+  src={getPublicAssetPath("/img/airplane.png")} // ИЗМЕНЕНО: теперь путь с префиксом
   alt="airplane"
   className={styles.airplaneImage}
   initial={{ x: -1000, opacity: 0, rotate: 55 }}
@@ -133,9 +134,7 @@ const closeModal = () => setIsModalOpen(false);
   transition={{ duration: 1.5, delay: 2, ease: "easeOut" }}
 />
   </div>
-  
-   <div className={styles.imageWrapper_4}>
-     {/* <Link href="/contact"><div className={styles.header_text_3}>Контакти</div></Link> */}
+    <div className={styles.imageWrapper_4}>
 <motion.div
   className={styles.header_text_3}
   initial={{ opacity: 0 }}
@@ -150,20 +149,15 @@ const closeModal = () => setIsModalOpen(false);
 >
   Контакти
 </motion.div>
-
-     
     <Image
-      src="/img/cloud_4_1.png"
+      src={getPublicAssetPath("/img/cloud_4_1.png")} // ИЗМЕНЕНО: теперь путь с префиксом
       alt="cloud"
       fill
       className={styles.image_4}
       priority
     />
   </div>
- 
-     
       </div>
     </motion.section>
-    
   );
 }
