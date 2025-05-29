@@ -3,10 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "homepage": "https://github.com/117Ustim/children_animation.git",
+
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy":"npm run build",
+ "deploy":"gh-pages -d build"
   },
   "dependencies": {
     "framer-motion": "^12.10.4",
@@ -15,5 +19,8 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "sass": "^1.88.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
