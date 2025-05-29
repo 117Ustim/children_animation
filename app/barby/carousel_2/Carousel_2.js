@@ -11,7 +11,7 @@ const teamMembers = [
   { name: "Julia Gimmel", role: "Дитяче", imgSrc: "/img/gallery/carousel/4.jpg" },
   { name: "Lisa Anderson", role: " Manager", imgSrc: "/img/gallery/carousel/5.jpg" },
   { name: "James Wilson", role: "Портрет", imgSrc: "/img/gallery/carousel/6.jpg" },
-  { name: "Emily Gimmel", role: "Свято", imgSrc: "/img/gallery/carousel/7.jpg" }
+  { name: "Emily Gimmel", role: "Свято", imgSrc: "/img/gallery/carousel/IMG_0088(1).JPG" }
 ];
 
 const Carousel2 = () => {
