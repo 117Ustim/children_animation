@@ -5,13 +5,13 @@ import Image from 'next/image';
 import styles from './carousel_2.module.css';
 
 const teamMembers = [
-  { name: "Emily Kim", role: "Дитяче", imgSrc: "/img/gallery/carousel/1.JPG" },
-  { name: "Emma Steward", role: "Мама", imgSrc: "/img/gallery/carousel/2.JPG" },
-  { name: "Emma Rodriguez", role: "Дитяче", imgSrc: "/img/gallery/carousel/3.JPG" },
-  { name: "Julia Gimmel", role: "Дитяче", imgSrc: "/img/gallery/carousel/4.JPG" },
-  { name: "Lisa Anderson", role: " Manager", imgSrc: "/img/gallery/carousel/5.JPG" },
-  { name: "James Wilson", role: "Портрет", imgSrc: "/img/gallery/carousel/6.JPG" },
-  { name: "Emily Gimmel", role: "Свято", imgSrc: "/img/gallery/carousel/7.JPG" }
+  { name: "Emily Kim", role: "Дитяче", imgSrc: "/img/gallery/carousel/1.jpg" },
+  { name: "Emma Steward", role: "Мама", imgSrc: "/img/gallery/carousel/2.jpg" },
+  { name: "Emma Rodriguez", role: "Дитяче", imgSrc: "/img/gallery/carousel/3.jpg" },
+  { name: "Julia Gimmel", role: "Дитяче", imgSrc: "/img/gallery/carousel/4.jpg" },
+  { name: "Lisa Anderson", role: " Manager", imgSrc: "/img/gallery/carousel/5.jpg" },
+  { name: "James Wilson", role: "Портрет", imgSrc: "/img/gallery/carousel/6.jpg" },
+  { name: "Emily Gimmel", role: "Свято", imgSrc: "/img/gallery/carousel/7.jpg" }
 ];
 
 const Carousel2 = () => {
