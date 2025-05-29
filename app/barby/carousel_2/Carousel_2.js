@@ -5,7 +5,7 @@ import Image from 'next/image';
 import styles from './carousel_2.module.css';
 
 const teamMembers = [
-  { name: "Emily Kim", role: "Дитяче", imgSrc: "/img/gallery/carousel/1.JPG" },
+  { name: "Emily Kim", role: "Дитяче", imgSrc: "/img/gallery/carousel/IMG_0189.JPG" },
   { name: "Emma Steward", role: "Мама", imgSrc: "/img/gallery/carousel/2.jpg" },
   { name: "Emma Rodriguez", role: "Дитяче", imgSrc: "/img/gallery/carousel/3.jpg" },
   { name: "Julia Gimmel", role: "Дитяче", imgSrc: "/img/gallery/carousel/4.jpg" },
