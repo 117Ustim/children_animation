@@ -10,7 +10,7 @@
     "start": "next start",
     "lint": "next lint",
    
-    "deploy": "next build && next export && touch out/.nojekyll && gh-pages -d out -t true" 
+    "deploy": "next build && touch out/.nojekyll && gh-pages -d out -t true" 
   },
   "dependencies": {
     "framer-motion": "^12.10.4",
