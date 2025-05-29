@@ -2,8 +2,10 @@
 const nextConfig = {
   output: 'export',
   trailingSlash: true,
+  basePath: '/children_animation',
+  assetPrefix: '/children_animation/',
   images: {
-    unoptimized: true, 
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
@@ -11,11 +13,6 @@ const nextConfig = {
       },
     ],
   },
-  basePath: '/children_animation',
-  assetPrefix: '/children_animation/',
-  trailingSlash: true,
-  output: 'export',
-
 };
 
 export default nextConfig;
