@@ -2,6 +2,7 @@
   position: relative;
   min-height: 55vw;
   width: 100%;
+
   overflow: hidden;
 }
 .image_block {
@@ -12,7 +13,6 @@
   margin-top: 9vw;
   margin-right: 35vw;
   z-index: 2;
- 
 }
 .imageElipse {
   position: relative;
@@ -22,13 +22,13 @@
 }
 .gradient_circle {
   position: absolute;
-  top:2.3vw;
+  top: 2.3vw;
   left: 2.6vw;
   z-index: 0;
 
   width: 26.9vw;
   height: 25.9vw;
-  border-radius: 50%; /* круг */
+  border-radius: 50%;
   background: linear-gradient(270deg, #a486ce, #b4d7f2, #f3cfd6);
   background-size: 600% 600%;
   animation: gradientShift 8s ease infinite;
@@ -62,7 +62,6 @@
   height: auto;
 }
 .sprayImage {
-  
   position: absolute;
   top: 15%;
   left: 38%;
@@ -75,15 +74,14 @@
   position: absolute;
   top: -9vw;
   left: 55%;
-  transform: translate(-50%, -50%)rotate(45deg);
+  transform: translate(-50%, -50%) rotate(45deg);
   width: 36.46vw;
   height: auto;
   z-index: -1;
-   
 }
 .sunImage {
   position: absolute;
-  top:-9vw;
+  top: -9vw;
   left: 80%;
   transform: translate(-50%, -50%);
   width: 50vw;
@@ -94,40 +92,36 @@
 .coolestImage_block {
   display: flex;
   flex-direction: column;
- justify-content: center;
+  justify-content: center;
   width: 60.47vw;
   height: auto;
   position: absolute;
   top: 21.5vw;
   left: -10vw;
-    transform: rotate(-15deg);
-   
+  transform: rotate(-15deg);
 }
 
- .coolestImage_block_block {
-display: flex;
- }
- 
- .the {
-  margin-right: 0.5vw;
-width: 8.49vw;
-height: 4.64vw;
-
- }
- .coolest_block {
-
+.coolestImage_block_block {
   display: flex;
-  gap: 4px; 
- width: 16.75vw;
- height: 7.69vw;
+}
 
- }
+.the {
+  margin-right: 0.5vw;
+  width: 8.49vw;
+  height: 4.64vw;
+}
+.coolest_block {
+  display: flex;
+  gap: 4px;
+  width: 16.75vw;
+  height: 7.69vw;
+}
 
- .children_parties {
+.children_parties {
   width: 41.67vw;
-height: auto;
-padding-top: 1.1vw;
- }
+  height: auto;
+  padding-top: 1.1vw;
+}
 .ladybugImage {
   position: absolute;
   top: 66%;
@@ -136,8 +130,6 @@ padding-top: 1.1vw;
   width: 6.02vw;
   height: auto;
 }
-
-
 
 @media (min-width: 570px) and (max-width: 1200px) {
   .section {
@@ -153,30 +145,30 @@ padding-top: 1.1vw;
     left: 50%;
     transform: translateX(-50%);
   }
-.gradient_circle {
-  position: absolute;
-  top:3.2vw;
-  left: 3.5vw;
-  z-index: 0;
-  width: 38vw;
-  height: 36.3vw;
-  border-radius: 50%; /* круг */
-  background: linear-gradient(270deg, #a486ce, #b4d7f2, #f3cfd6);
-  background-size: 600% 600%;
-  animation: gradientShift 8s ease infinite;
-}
+  .gradient_circle {
+    position: absolute;
+    top: 3.2vw;
+    left: 3.5vw;
+    z-index: 0;
+    width: 38vw;
+    height: 36.3vw;
+    border-radius: 50%; /* круг */
+    background: linear-gradient(270deg, #a486ce, #b4d7f2, #f3cfd6);
+    background-size: 600% 600%;
+    animation: gradientShift 8s ease infinite;
+  }
 
-@keyframes gradientShift {
-  0% {
-    background-position: 0% 50%;
+  @keyframes gradientShift {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
   }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
   .elipseImage {
     width: 45vw;
     height: auto;
@@ -192,17 +184,16 @@ padding-top: 1.1vw;
   }
 
   .coolestImage_block {
-  display: flex;
-  flex-direction: column;
- justify-content: center;
-  width: 60.47vw;
-  height: auto;
-  position: absolute;
-  top: 32.5vw;
-  left: -7vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60.47vw;
+    height: auto;
+    position: absolute;
+    top: 32.5vw;
+    left: -7vw;
     transform: rotate(-15deg);
-   
-}
+  }
   .sprayImage {
     position: absolute;
     top: 25%;
@@ -213,15 +204,14 @@ padding-top: 1.1vw;
     z-index: -1;
   }
   .sprayImage_2 {
-  position: absolute;
-  top: -9vw;
-  left: 59%;
-  transform: translate(-50%, -50%)rotate(45deg);
-  width: 36.46vw;
-  height: auto;
-  z-index: -1;
-   
-}
+    position: absolute;
+    top: -9vw;
+    left: 59%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 36.46vw;
+    height: auto;
+    z-index: -1;
+  }
   .sunImage {
     top: 10%;
     left: 75%;
@@ -239,13 +229,13 @@ padding-top: 1.1vw;
     height: auto;
   }
   .ladybugImage {
-  position: absolute;
-  top: 73%;
-  left: 107%;
-  transform: translate(-50%, -50%) rotate(-40deg);
-  width: 6.02vw;
-  height: auto;
-}
+    position: absolute;
+    top: 73%;
+    left: 107%;
+    transform: translate(-50%, -50%) rotate(-40deg);
+    width: 6.02vw;
+    height: auto;
+  }
 }
 
 @media (min-width: 360px) and (max-width: 570px) {
@@ -262,30 +252,30 @@ padding-top: 1.1vw;
     left: 50%;
     transform: translateX(-50%);
   }
-    .gradient_circle {
-        position: absolute;
-        top:3.8vw;
-        left: 4.4vw;
-        z-index: 0;
-        width: 47.3vw;
-        height: 46.3vw;
-        border-radius: 50%; /* круг */
-        background: linear-gradient(270deg, #a486ce, #b4d7f2, #f3cfd6);
-        background-size: 600% 600%;
-        animation: gradientShift 8s ease infinite;
-    }
+  .gradient_circle {
+    position: absolute;
+    top: 3.8vw;
+    left: 4.4vw;
+    z-index: 0;
+    width: 47.3vw;
+    height: 46.3vw;
+    border-radius: 50%; /* круг */
+    background: linear-gradient(270deg, #a486ce, #b4d7f2, #f3cfd6);
+    background-size: 600% 600%;
+    animation: gradientShift 8s ease infinite;
+  }
 
-    @keyframes gradientShift {
-        0% {
-            background-position: 0% 50%;
-        }
-        50% {
-            background-position: 100% 50%;
-        }
-        100% {
-            background-position: 0% 50%;
-        }
+  @keyframes gradientShift {
+    0% {
+      background-position: 0% 50%;
     }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
   .elipseImage {
     width: 56vw;
     height: 54vw;
@@ -300,26 +290,23 @@ padding-top: 1.1vw;
     height: auto;
   }
 
-    .coolestImage_block {
-  display: flex;
-  flex-direction: column;
- justify-content: center;
-  width: 85.47vw;
-  height: auto;
-  position: absolute;
-  top: 40.5vw;
-  left: -11vw;
+  .coolestImage_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 85.47vw;
+    height: auto;
+    position: absolute;
+    top: 40.5vw;
+    left: -11vw;
     transform: rotate(-15deg);
-   
-}
- .coolest_block {
-
-  display: flex;
-  gap: 4px; 
- width: 18.75vw;
- height: 9.69vw;
-
- }
+  }
+  .coolest_block {
+    display: flex;
+    gap: 4px;
+    width: 18.75vw;
+    height: 9.69vw;
+  }
 
   .sprayImage {
     position: absolute;
@@ -346,12 +333,12 @@ padding-top: 1.1vw;
     width: 80vw;
     height: auto;
   }
-   .ladybugImage {
-  position: absolute;
-  top: 76%;
-  left: 107%;
-  transform: translate(-50%, -50%) rotate(-40deg);
-  width: 6.02vw;
-  height: auto;
-}
+  .ladybugImage {
+    position: absolute;
+    top: 76%;
+    left: 107%;
+    transform: translate(-50%, -50%) rotate(-40deg);
+    width: 6.02vw;
+    height: auto;
+  }
 }

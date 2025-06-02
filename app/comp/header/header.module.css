@@ -1,20 +1,13 @@
 .section {
-  
-  /* display: flex;
-height: 20vh;
-  justify-content: center; */
-   overflow: hidden;  
-   position: relative;
+  overflow: hidden;
+  position: relative;
   width: 100%;
-  padding-top: 15.25%; /* 16:9 = 9/16 = 0.5625 */
-  
+
+  padding-top: 15.25%;
 }
 
 .imageRow {
-  /* position: relative;
-  width: 100%;
-   */
- position: absolute;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -24,21 +17,19 @@ height: 20vh;
 .imageWrapper_1,
 .imageWrapper_2,
 .imageWrapper_3,
-.imageWrapper_4
- {
+.imageWrapper_4 {
   position: absolute;
   width: 20vw;
   height: 15vw;
 }
 .airplaneImage {
- 
-margin-top: 11vw;
-margin-left: 23.5vw;
+  margin-top: 11vw;
+  margin-left: 23.5vw;
   width: 7vw;
   height: auto;
- z-index: 5;
+  z-index: 5;
 }
-/* Позиционирование обёрток */
+
 .imageWrapper_1 {
   width: 40vw;
   height: 30vw;
@@ -52,7 +43,7 @@ margin-left: 23.5vw;
   width: 40vw;
   height: 24vw;
   top: -7vw;
-  left: 5.60vw;
+  left: 5.6vw;
   z-index: 1;
 }
 .imageWrapper_3 {
@@ -62,10 +53,7 @@ margin-left: 23.5vw;
   left: 30vw;
   z-index: 2;
 }
-/* .airplane {
-  width: 1vw;
-  height: auto;
-} */
+
 .imageWrapper_4 {
   width: 36vw;
   height: 34vw;
@@ -78,12 +66,12 @@ margin-left: 23.5vw;
   position: absolute;
   top: 11.8vw;
   left: 7.6vw;
-font-family: "Paytone One", sans-serif;
+  font-family: "Paytone One", sans-serif;
   z-index: 3;
   color: rgb(83, 96, 77);
   font-size: 1.3vw;
   font-weight: 400;
- letter-spacing: 0.38vw;
+  letter-spacing: 0.38vw;
   cursor: pointer;
 }
 
@@ -92,19 +80,16 @@ font-family: "Paytone One", sans-serif;
   color: rgb(123, 136, 117);
 }
 
-
-
-
 .header_text_2 {
   position: absolute;
   top: 9.6vw;
   left: 5.5vw;
-font-family: "Paytone One", sans-serif;
+  font-family: "Paytone One", sans-serif;
   z-index: 3;
   color: rgb(83, 96, 77);
   font-size: 1.5vw;
   font-weight: 400;
- letter-spacing: 0.38vw;
+  letter-spacing: 0.38vw;
   cursor: pointer;
 }
 .header_text_3 {
@@ -112,11 +97,11 @@ font-family: "Paytone One", sans-serif;
   top: 21.8vw;
   left: 4.1vw;
   z-index: 3;
-font-family: "Paytone One", sans-serif;
+  font-family: "Paytone One", sans-serif;
   color: rgb(83, 96, 77);
   font-size: 1.3vw;
   font-weight: 400;
- letter-spacing:0.38vw;
+  letter-spacing: 0.38vw;
   cursor: pointer;
 }
 
@@ -134,7 +119,7 @@ font-family: "Paytone One", sans-serif;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.701); 
+  background: rgba(0, 0, 0, 0.701);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -142,7 +127,6 @@ font-family: "Paytone One", sans-serif;
 }
 
 .modalContent {
-  /* background: white; */
   padding: 40px;
   border-radius: 12px;
   max-width: 500px;
@@ -152,201 +136,179 @@ font-family: "Paytone One", sans-serif;
 .modalImage {
   position: relative;
   top: 0;
-  left:-10vw;
+  left: -10vw;
   width: 50vw;
-  height:auto ;
+  height: auto;
 }
 .telImage {
   position: relative;
   top: -19vw;
   left: 0;
   width: 27vw;
-  height:auto;
+  height: auto;
 }
 
 @media (min-width: 570px) and (max-width: 1200px) {
   .section {
-  
+    overflow: hidden;
+    padding-top: 22.25%;
+  }
+  .imageWrapper_1 {
+    width: 50vw;
+    height: 42vw;
+    top: -11vw;
+    left: -11vw;
+    transform: rotate(-10deg);
+  }
 
-  overflow: hidden;
-  padding-top: 22.25%; 
- 
-}
-.imageWrapper_1 {
-  width: 50vw;
-  height: 42vw;
-  top: -11vw;
-  left: -11vw;
-  transform: rotate(-10deg);
-}
+  .imageWrapper_2 {
+    width: 50vw;
+    height: 45vw;
+    top: -12vw;
+    left: 9vw;
+    z-index: 1;
+    transform: rotate(10deg);
+  }
+  .imageWrapper_3 {
+    width: 45vw;
+    height: 40vw;
+    top: -8vw;
+    left: 39vw;
+    z-index: 2;
+  }
+  .imageWrapper_4 {
+    width: 50vw;
+    height: 40vw;
+    top: -20.5vw;
+    left: 68vw;
+    z-index: 3;
+  }
+  .header_text_1 {
+    top: 21.8vw;
+    left: 7.1vw;
 
-.imageWrapper_2 {
-  width: 50vw;
-  height: 45vw;
-  top: -12vw;
-  left: 9.0vw;
-  z-index: 1;
-   transform: rotate(10deg);
-}
-.imageWrapper_3 {
-  width: 45vw;
-  height: 40vw;
-  top: -8vw;
-  left: 39vw;
-  z-index: 2;
-}
-.imageWrapper_4 {
-  width: 50vw;
-  height: 40vw;
-  top: -20.5vw;
-  left: 68vw;
-  z-index: 3;
-}
-.header_text_1 {
- 
-  top: 21.8vw;
-  left: 7.1vw;
+    transform: rotate(-10deg);
+    font-size: 1.9vw;
+    font-weight: 400;
+    letter-spacing: 0.52vw;
+  }
+  .header_text_2 {
+    position: absolute;
+    top: 15.6vw;
+    left: 5vw;
 
- transform: rotate(-10deg);
-  font-size: 1.9vw;
-  font-weight: 400;
- letter-spacing: 0.52vw;
- 
-}
-.header_text_2 {
-  position: absolute;
-  top: 15.6vw;
-  left: 5vw;
+    font-size: 1.9vw;
+    font-weight: 400;
+    letter-spacing: 0.52vw;
+  }
+  .header_text_3 {
+    position: absolute;
+    top: 27vw;
+    left: 5.6vw;
 
-  font-size: 1.9vw;
-  font-weight: 400;
- letter-spacing: 0.52vw;
-  
-}
-.header_text_3 {
-  position: absolute;
-  top: 27vw;
-  left: 5.6vw;
-  
-  font-size: 1.9vw;
-  font-weight: 400;
- letter-spacing:0.52vw;
-  
-}
-.airplaneImage {
-margin-top: 19vw;
-margin-left: 24.5vw;
-  width: 7.5vw;
-  height: auto;
-
-}
-.modalImage {
-
-  top: 0;
-  left:-10vw;
-  width: 60vw;
-  
-}
-.telImage {
-  position: relative;
-  top: -22vw;
-  left: 0;
-  width: 30vw;
-  height:auto;
-}
+    font-size: 1.9vw;
+    font-weight: 400;
+    letter-spacing: 0.52vw;
+  }
+  .airplaneImage {
+    margin-top: 19vw;
+    margin-left: 24.5vw;
+    width: 7.5vw;
+    height: auto;
+  }
+  .modalImage {
+    top: 0;
+    left: -10vw;
+    width: 60vw;
+  }
+  .telImage {
+    position: relative;
+    top: -22vw;
+    left: 0;
+    width: 30vw;
+    height: auto;
+  }
 }
 
-
-
- @media (min-width: 360px) and (max-width: 570px) {
+@media (min-width: 360px) and (max-width: 570px) {
   .section {
-  
+    overflow: hidden;
+    padding-top: 25.25%;
+  }
+  .imageWrapper_1 {
+    width: 60vw;
+    height: 52vw;
+    top: -13vw;
+    left: -14vw;
+    transform: rotate(-10deg);
+  }
 
-  overflow: hidden;
-  padding-top: 25.25%; 
- 
-}
-.imageWrapper_1 {
-  width: 60vw;
-  height: 52vw;
-  top: -13vw;
-  left: -14vw;
-  transform: rotate(-10deg);
-}
+  .imageWrapper_2 {
+    width: 60vw;
+    height: 55vw;
+    top: -14vw;
+    left: 7.6vw;
+    z-index: 1;
+    transform: rotate(10deg);
+  }
+  .imageWrapper_3 {
+    width: 55vw;
+    height: 50vw;
+    top: -10vw;
+    left: 40vw;
+    z-index: 2;
+  }
+  .imageWrapper_4 {
+    width: 60vw;
+    height: 50vw;
+    top: -25vw;
+    left: 74vw;
+    z-index: 3;
+  }
+  .airplaneImage {
+    margin-top: 24vw;
+    margin-left: 31.5vw;
+    width: 7.8vw;
+    height: auto;
+  }
 
-.imageWrapper_2 {
-  width: 60vw;
-  height: 55vw;
-  top: -14vw;
-  left: 7.60vw;
-  z-index: 1;
-  transform: rotate(10deg);
-}
-.imageWrapper_3 {
-  width: 55vw;
-  height: 50vw;
-  top: -10vw;
-  left: 40vw;
-  z-index: 2;
-}
-.imageWrapper_4 {
-  width: 60vw;
-  height: 50vw;
-  top: -25vw;
-  left: 74vw;
-  z-index: 3;
-}
-.airplaneImage {
-margin-top: 24vw;
-margin-left: 31.5vw;
-  width: 7.8vw;
-  height: auto;
+  .header_text_1 {
+    top: 26.4vw;
+    left: 8.1vw;
 
-}
+    transform: rotate(-10deg);
+    font-size: 2.6vw;
+    font-weight: 400;
+    letter-spacing: 0.52vw;
+  }
+  .header_text_2 {
+    position: absolute;
+    top: 19.6vw;
+    left: 5.5vw;
 
-.header_text_1 {
- 
-  top: 26.4vw;
-  left: 8.1vw;
+    font-size: 2.6vw;
+    font-weight: 400;
+    letter-spacing: 0.52vw;
+  }
+  .header_text_3 {
+    position: absolute;
+    top: 32.5vw;
+    left: 6vw;
 
- transform: rotate(-10deg);
-  font-size: 2.6vw;
-  font-weight: 400;
- letter-spacing: 0.52vw;
- 
-}
-.header_text_2 {
-  position: absolute;
-  top: 19.6vw;
-  left: 5.5vw;
-
-  font-size: 2.6vw;
-  font-weight: 400;
- letter-spacing: 0.52vw;
-  
-}
-.header_text_3 {
-  position: absolute;
-  top: 32.5vw;
-  left: 6vw;
-  
-  font-size: 2.6vw;
-  font-weight: 400;
- letter-spacing:0.52vw;
-  
-}
-.modalImage {
-
-  top: -20vw;
-  left:-10vw;
-  width: 90vw;
-  
-}
-.telImage {
-  position: relative;
-  top: -53vw;
-  left: -2vw;
-  width: 50vw;
-  height:auto;
-}
+    font-size: 2.6vw;
+    font-weight: 400;
+    letter-spacing: 0.52vw;
+  }
+  .modalImage {
+    top: -20vw;
+    left: -10vw;
+    width: 90vw;
+  }
+  .telImage {
+    position: relative;
+    top: -53vw;
+    left: -2vw;
+    width: 50vw;
+    height: auto;
+  }
 }

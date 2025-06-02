@@ -1,74 +1,59 @@
 .section {
-position: relative;
-   min-height: 5vw; 
+  position: relative;
+  min-height: 5vw;
   width: 100%;
-  /* overflow: hidden;  */
-
 }
 
 .grassImage {
- position: relative;
+  position: relative;
   width: 100vw;
   height: 27.46vw;
   z-index: 3;
 }
 .networks_block {
-  
   display: flex;
   gap: 1.56vw;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
 }
 
-
 .icon {
-width:3.65vw ;
-height: auto;
+  width: 3.65vw;
+  height: auto;
 }
 
 .fenceImage {
   position: absolute;
   top: 5vw;
   right: -4vw;
- width: 37vw;
- height: auto;
+  width: 37vw;
+  height: auto;
 }
 
 @media (min-width: 570px) and (max-width: 1200px) {
+  .grassImage {
+    width: 100vw;
+    height: 27.46vw;
+  }
 
-
-.grassImage {
- 
-  width: 100vw;
-  height: 27.46vw;
+  .networksImage {
+    width: 30vw;
+    height: auto;
+  }
 }
 
-.networksImage {
-  width:30vw;
-  height:auto;
-  
- 
-}
-}
+@media (min-width: 360px) and (max-width: 570px) {
+  .grassImage {
+    width: 100vw;
+    height: 27.46vw;
+  }
 
-
- @media (min-width: 360px) and (max-width: 570px) {
-
-
-.grassImage {
- 
-  width: 100vw;
-  height: 27.46vw;
-}
-
-.networksImage {
-  width:30vw;
-  height:auto;
-  
- 
-}
-.icon {
-width:4.65vw ;
-height: auto;
-}
+  .networksImage {
+    width: 30vw;
+    height: auto;
+  }
+  .icon {
+    width: 4.65vw;
+    height: auto;
+  }
 }

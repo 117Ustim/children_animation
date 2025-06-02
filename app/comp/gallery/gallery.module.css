@@ -2,7 +2,6 @@
   position: relative;
   min-height: 75vw;
   width: 100%;
-  /* overflow: hidden;  */
 }
 .container {
   width: 100%;
@@ -36,95 +35,83 @@
 }
 
 .container_block_images {
-width: 100%;
-height: auto;
+  width: 100%;
+  height: auto;
 }
 .block_elipse {
-position: relative;
-top: 15vw;
-left: 18vw;
+  position: relative;
+  top: 15vw;
+  left: 18vw;
 }
 .elipse_sm {
-width: 14.9vw;
-height: auto;
-position: absolute;
-
-
+  width: 14.9vw;
+  height: auto;
+  position: absolute;
 }
 .elipse_sm_image {
-width: 12.39vw;
-height: auto;
-position: absolute;
+  width: 12.39vw;
+  height: auto;
+  position: absolute;
   top: -0.52vw;
   left: 1vw;
- 
 }
 .elipse_text,
 .circle_1_text,
-.circle_1_text  {
- 
-  
+.circle_1_text {
   position: absolute;
   top: 17vw;
   left: 0vw;
   font-size: 1.35vw;
   color: rgb(155, 112, 101);
   letter-spacing: 0.52vw;
-  font-weight:400;
+  font-weight: 400;
   cursor: pointer;
   font-family: "Paytone One", sans-serif;
 }
 
-
 .block_circle_1 {
-position: relative;
-top: 20vw;
-left: 43vw;
+  position: relative;
+  top: 20vw;
+  left: 43vw;
 }
 
 .circle_sm_1 {
-width: 14.9vw;
-height: auto;
-position: absolute;
+  width: 14.9vw;
+  height: auto;
+  position: absolute;
 }
 .circle_sm_1_image {
-width: 12.39vw;
-height: auto;
-position: absolute;
+  width: 12.39vw;
+  height: auto;
+  position: absolute;
   top: -2.7vw;
   left: 1vw;
 }
 
-
 .block_circle_2 {
-position: relative;
-top: 25vw;
-left: 69vw;
+  position: relative;
+  top: 25vw;
+  left: 69vw;
 }
 
 .circle_sm_2 {
-width: 14.9vw;
-height: auto;
-position: absolute;
+  width: 14.9vw;
+  height: auto;
+  position: absolute;
 }
 .circle_sm_2_image {
-width: 11vw;
-height: auto;
-position: absolute;
+  width: 11vw;
+  height: auto;
+  position: absolute;
   top: -1.7vw;
   left: 1.9vw;
 }
-
-
-
-
 
 @media (min-width: 570px) and (max-width: 1200px) {
   .section {
     position: relative;
     min-height: 90vw;
     width: 100%;
-    /* overflow: hidden;  */
   }
 
   .rainbowImage {

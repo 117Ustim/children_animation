@@ -2,41 +2,32 @@
   display: flex;
   width: 100%;
   height: auto;
-   position: relative;
+  position: relative;
 }
-
 
 .left {
- 
 }
 .image_block {
- position: relative;
- top: 10vw;
- left: -2vw;
+  position: relative;
+  top: 10vw;
+  left: -2vw;
 }
 .elipse_gallery {
-    width: 36vw;
-    height: auto;
+  width: 36vw;
+  height: auto;
 }
 
-
 .image_gallery {
-    position: absolute;
-    top:-8.62vw;
-    left: 5.1vw;
+  position: absolute;
+  top: -8.62vw;
+  left: 5.1vw;
   width: 26vw;
   height: auto;
- 
-  /* object-fit: cover; */
 }
 
 .right {
   width: 70%;
- margin:5.5vw 3.65vw 0 4vw;
-  /* display: flex;
-  align-items: center; */
-
- 
+  margin: 5.5vw 3.65vw 0 4vw;
 }
 
 .textContent {
@@ -45,20 +36,16 @@
   max-width: 50vw;
   font-size: 1vw;
 
-    font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .textContent h1 {
   font-size: 2em;
   margin-bottom: 1.2vw;
- 
 }
 
 .lineNormal {
-   line-height: 2;
-  
-
-
+  line-height: 2;
 }
 
 .lineWide {
@@ -72,92 +59,68 @@
 
 .lineTight {
   line-height: 2;
-  
-
 }
 .spider {
-    position: absolute;
-    top: 10vw;
-    right: -0.9vw;
-    
-    width: 25vw;
-    height: auto;
+  position: absolute;
+  top: 10vw;
+  right: -0.9vw;
+
+  width: 25vw;
+  height: auto;
 }
 .table_block {
-position: relative;
-
-
+  position: relative;
 }
 
 .table {
-width: 25vw;
-height: auto;
+  width: 25vw;
+  height: auto;
 }
 
 .table_text {
-    position: absolute;
-    top:10.94vw;
-    left: 4.69vw;
-    width: 17vw;
-    height: auto;
+  position: absolute;
+  top: 10.94vw;
+  left: 4.69vw;
+  width: 17vw;
+  height: auto;
 }
 
-
- @media (min-width: 1000px) and (max-width: 1400px) {
-.textContent h1 {
-  font-size: 1.7em;
-  margin-bottom: 1.2vw;
- 
-}
-.spider {
-  
+@media (min-width: 1000px) and (max-width: 1400px) {
+  .textContent h1 {
+    font-size: 1.7em;
+    margin-bottom: 1.2vw;
+  }
+  .spider {
     top: 20vw;
-    
+  }
 }
- }
 
-  @media (min-width: 600px) and (max-width: 1000px) {
-    .container {
- 
- 
- 
-}
+@media (min-width: 600px) and (max-width: 1000px) {
+  .container {
+  }
   .textContent {
- 
-  font-size: 1.8vw;
-    
-}
-.textContent h1 {
-  font-size: 1.5em;
-  margin-bottom: 1.2vw;
- 
-}
-.spider {
-  
+    font-size: 1.8vw;
+  }
+  .textContent h1 {
+    font-size: 1.5em;
+    margin-bottom: 1.2vw;
+  }
+  .spider {
     top: 28vw;
-    
+  }
 }
- }
 
-  @media (min-width: 360px) and (max-width: 600px) {
-    .container {
- 
- 
- 
-}
+@media (min-width: 360px) and (max-width: 600px) {
+  .container {
+  }
   .textContent {
- 
-  font-size: 2.2vw;
-    
-}
-.textContent h1 {
-  font-size: 1.7em;
-  margin-bottom: 1.2vw;
- 
-}
-.spider {
-  
+    font-size: 2.2vw;
+  }
+  .textContent h1 {
+    font-size: 1.7em;
+    margin-bottom: 1.2vw;
+  }
+  .spider {
     top: 40vw;
-    
+  }
 }
- }

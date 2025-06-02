@@ -1,7 +1,7 @@
 .rain {
   position: absolute;
-margin-top: -12vw;
-margin-left: 15vw;
+  margin-top: -12vw;
+  margin-left: 15vw;
 
   width: 27vw;
   height: 80vh;
@@ -15,55 +15,37 @@ margin-left: 15vw;
   height: 89px;
   position: absolute;
   bottom: 200px;
-   transform: rotate(-10deg);
+  transform: rotate(-10deg);
   animation: fall 0.63s linear infinite;
-  
 }
 
 @keyframes fall {
   to {
-    /* margin-top: 900px; */
     transform: translate(120px, 600px) rotate(-10deg);
   }
 }
 
-
-
-
-
-
- @media (min-width: 1200px) and (max-width: 1350px) {
-.rain {
- 
-  height: 70vh;
- 
+@media (min-width: 1200px) and (max-width: 1350px) {
+  .rain {
+    height: 70vh;
+  }
 }
 
+@media (min-width: 785px) and (max-width: 1050px) {
+  .rain {
+    height: 60vh;
+  }
 }
 
- @media (min-width: 785px) and (max-width: 1050px) {
-.rain {
- 
-  height: 60vh;
- 
-}
-
-}
-
- @media (min-width: 570px) and (max-width: 785px) {
-.rain {
- 
-  height: 40vh;
- 
-}
-
+@media (min-width: 570px) and (max-width: 785px) {
+  .rain {
+    height: 40vh;
+  }
 }
 
 @media (min-width: 460px) and (max-width: 570px) {
-.rain {
- 
-  height: 30vh;
- overflow: hidden;
-}
-
+  .rain {
+    height: 30vh;
+    overflow: hidden;
+  }
 }

@@ -1,6 +1,6 @@
 'use client';
 
-import styles from './footer.module.css'; 
+import styles from './footer.module.css';
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
@@ -13,7 +13,7 @@ export default function Footer() {
     hidden: {},
     visible: {
       transition: {
-        staggerChildren: 0.2, // задержка между анимациями
+        staggerChildren: 0.2,
       },
     },
   };
@@ -55,8 +55,8 @@ export default function Footer() {
             />
           ))}
         </motion.div>
-      <img src="/img/grass.png" alt="grass" className={styles.grassImage} />  
-       <img src="/img/fence.png" alt="fence" className={styles.fenceImage} />  
+        <img src="/img/grass.png" alt="grass" className={styles.grassImage} />
+        <img src="/img/fence.png" alt="fence" className={styles.fenceImage} />
       </div>
     </motion.section>
   );
